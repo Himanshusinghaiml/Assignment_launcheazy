@@ -41,14 +41,22 @@ The User Management System is a platform designed to manage users, roles, and or
        ```
        assignenv\Scripts\activate.bat
        ```
+   -Run the necesssary commands for necessary pacakges:
+      ```
+
+      pip install -r requirements.txt
+      ```
  
-5. Install dependencies:
-   ``` pip install -r requirements.txt```
 
-6. Apply database migrations:
-- ``` python manage.py makemigrations```
+5. Apply database migrations:
+   ```
 
-7. ``` python manage.py migrate```
+   python manage.py makemigrations
+   ```
+
+   ``` 
+   python manage.py migrate
+   ```
 
 ## Usage
 1. Start the development server:
