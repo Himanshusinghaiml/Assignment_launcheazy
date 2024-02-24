@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Sign-up</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        .button-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .button-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Sign-up with Organization</h1>
+        <form action="/signup/" method="post">
+            {% csrf_token %}
+            <label for="username">Username:</label> 
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button type="submit">Sign up</button>
+        </form>
+        <a href="{% url 'loginpage' %}" class="button-link">Already a user? Click here to login</a>
+    </div>
+</body>
+</html>

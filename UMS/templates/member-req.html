@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Requests</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .allow-checkbox {
+            transform: scale(1.5); /* Increase checkbox size */
+            margin-right: 10px;
+        }
+
+        .action-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .action-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Membership Requests</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Organization Name</th>
+                    <th>Allow</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>JohnDoe</td>
+                    <td>ABC Corp</td>
+                    <td><input type="checkbox" class="allow-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>JaneSmith</td>
+                    <td>XYZ Inc</td>
+                    <td><input type="checkbox" class="allow-checkbox"></td>
+                </tr>
+                <!-- Add more rows for other membership requests -->
+            </tbody>
+        </table>
+        <button class="action-button">Submit</button>
+    </div>
+</body>
+</html>
